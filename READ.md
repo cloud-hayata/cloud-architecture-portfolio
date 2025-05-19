@@ -14,7 +14,7 @@ GUIでの手動構築から始まり、TerraformによるIaC、Serverless構成�
 ## 3. ロードマップ - Roadmap
 | STEP | 内容 | 完了状況 |
 |------|------|----------|
-| STEP 1 | GUI構築（VPC, EC2, S3など） | 🔄 進行中 |
+| STEP 1 | GUI構築（VPC, EC2, S3など） | ✅ 完了 |
 | STEP 2 | TerraformによるIaC構成 | ⏳ 準備中 |
 | STEP 3 | サーバレス構成（Lambda等） | ⏳ 準備中 |
 | STEP 4 | CI/CD＆監視設計 | ⏳ 準備中 |
@@ -23,12 +23,18 @@ GUIでの手動構築から始まり、TerraformによるIaC、Serverless構成�
 | STEP 7 | 企業別カスタム構成 | ⏳ 準備中 |
 | STEP 8 | 実案件再現 | ⏳ 準備中 |
 
-## 🔍 Step 1 詳細：GUI構成（VPC / EC2 / S3 など）
+## 4. 各ステップの概要 - Step Overview
 
-VPC内のPublic / Privateサブネット分離、EC2 → RDSへの通信、  
-NAT Gateway / IGW経由の外部接続、S3・CloudWatch・Route 53連携などを構築。
+### 4-1. Step 1：GUI構成（VPC / EC2 / S3 など）
 
-👉 詳細・構成図は [step1_gui_build/README.md](./step1_gui_build/README.md) に記載しています。
+AWSマネジメントコンソールを用いて、以下のGUI構成を設計・構築しました。
+
+- VPC内のPublic / Privateサブネット分離
+- EC2 → RDSへの安全な通信経路の確保
+- NAT Gateway / IGWを通じた外部接続
+- S3・CloudWatch・Route 53 との連携設計
+
+📄 詳細・構成図は [`step1_gui_build/README.md`](./step1_gui_build/README.md) に記載しています。
 
 ## その他
 - 各ステップごとにコードと構成図を格納予定です
