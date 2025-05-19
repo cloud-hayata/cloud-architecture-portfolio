@@ -1,17 +1,17 @@
 # AWS Cloud Architecture Portfolio
 
-## 目的 - Objective
+## 1. 目的 - Objective
 未経験からAWSクラウドエンジニアとしての転職を目指し、実務レベルのインフラ構築スキルを証明するためのポートフォリオです。
 
 GUIでの手動構築から始まり、TerraformによるIaC、Serverless構成、CI/CD、監視設計まで網羅しています。
 
-## 技術スタック - Tech Stack
+## 2. 技術スタック - Tech Stack
 - **AWSサービス**：VPC / EC2 / S3 / RDS / Route53 / IAM / Lambda / API Gateway / DynamoDB / CloudWatch / SNS
 - **IaC**：Terraform
 - **CI/CD**：GitHub Actions / AWS CodePipeline
 - **構成図作成**：draw.io / Canva
 
-## ロードマップ - Roadmap
+## 3. ロードマップ - Roadmap
 | STEP | 内容 | 完了状況 |
 |------|------|----------|
 | STEP 1 | GUI構築（VPC, EC2, S3など） | 🔄 進行中 |
