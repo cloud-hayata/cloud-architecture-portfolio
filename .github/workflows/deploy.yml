@@ -17,7 +17,7 @@ jobs:
         run: |
           cd step4_ci_cd_build/lambda_function
           zip -r function.zip .
-          mv function.zip ../../function.zip  # ← ルート直下へ移動！
+          mv function.zip ../../function.zip
 
       - name: Deploy to AWS Lambda
         uses: aws-actions/aws-cli-action@v1
