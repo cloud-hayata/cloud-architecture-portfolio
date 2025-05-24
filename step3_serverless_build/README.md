@@ -95,3 +95,30 @@ Terraformによって構築されたリソースが、AWSマネジメントコ�
 
 ---
 
+## 8. フォルダ構成 - Folder Structure
+
+```plaintext
+step3_serverless_build/
+├── README.md
+├── serverless_architecture_diagram.png
+├── lambda_gui_step3.png
+├── terraform_apply_step3_gateway_result.png
+├── main.tf
+├── provider.tf
+├── lambda_function/
+│   └── lambda_function.py
+├── .gitignore
+```
+
+---
+
+## 9. 成果まとめ - Step3 実施内容要約
+
+| 項目 | 達成状況 |
+|------|----------|
+| TerraformでLambda構築 | ✅ |
+| API Gatewayとの統合（Proxy設定） | ✅ |
+| エンドポイントアクセスでLambda実行確認 | ✅ |
+| CloudWatchログ記録 | ✅ |
+| GUIでもリソース確認 | ✅ |
+| READMEによる可視化・証明 | ✅ |
