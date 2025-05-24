@@ -59,3 +59,20 @@ Outputs:
 
 api_endpoint = "https://lmtiz2053l.execute-api.ap-northeast-1.amazonaws.com/dev/hello"
 ```
+
+---
+
+## 6. 動作確認 - API Endpoint Test
+ブラウザまたはcurlで以下のURLにアクセスすると、Lambda関数の実行結果が返ってきます：
+
+🔗 https://lmtiz2053l.execute-api.ap-northeast-1.amazonaws.com/dev/hello
+
+```json
+{
+  "statusCode": 200,
+  "body": "Hello from Lambda!"
+}
+```
+
+---
+
