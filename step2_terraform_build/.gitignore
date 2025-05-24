@@ -1,0 +1,6 @@
+# Terraformの状態ファイル（超重要 / アップしない）
+*.tfstate
+*.tfstate.backup
+
+# Terraformのキャッシュフォルダ（不要ファイル）
+.terraform/
