@@ -61,3 +61,20 @@ terraform init         # 初期化
 terraform plan         # 差分の確認
 terraform apply        # 実行
 terraform destroy      # 構成の削除
+
+---
+
+## 7. 実行結果（Applyログ）
+
+Terraformにより、以下の5つのリソースが正常に構築されました。
+
+![applyログ](./terraform_apply_result.png)
+
+```bash
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+VPC（main-vpc）
+Public Subnet（public-subnet）
+Internet Gateway（main-igw）
+Route Table（public-route-table）
+Route Table Association（public-subnet との紐付け）
+
