@@ -50,7 +50,7 @@ def lambda_handler(event, context):
 以下は `terraform apply` 実行結果の一部です。  
 Terraformによって5つのリソースが作成され、APIエンドポイントも出力されました。
 
-📸 Terraform Applyの実行画面（クリックで拡大表示）：
+Terraform Applyの実行画面（クリックで拡大表示）：
 
 ![terraform_apply_step3_gateway_result](./terraform_apply_step3_gateway_result.png)
 
@@ -82,7 +82,7 @@ api_endpoint = "https://lmtiz2053l.execute-api.ap-northeast-1.amazonaws.com/dev/
 
 Terraformによって構築されたリソースが、AWSマネジメントコンソール上でも正しく確認できました。
 
-📸 Lambda関数のGUI画面（クリックで拡大表示）：
+Lambda関数のGUI画面（クリックで拡大表示）：
 
 ![lambda_gui_step3](./lambda_gui_step3.png)
 
