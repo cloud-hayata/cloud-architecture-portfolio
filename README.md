@@ -16,7 +16,7 @@ GUIでの手動構築から始まり、TerraformによるIaC、Serverless構成�
 |------|------|----------|
 | STEP 1 | GUI構築（VPC, EC2, S3など） | ✅ 完了 |
 | STEP 2 | TerraformによるIaC構成 | ✅ 完了 |
-| STEP 3 | サーバレス構成（Lambda等） | ⏳ 準備中 |
+| STEP 3 | サーバレス構成（Lambda等） | ✅ 完了 |
 | STEP 4 | CI/CD＆監視設計 | ⏳ 準備中 |
 | STEP 5 | Notion/PDFによる資料整備 | ⏳ 準備中 |
 | STEP 6 | ECS/コンテナ構成 | ⏳ 準備中 |
@@ -47,6 +47,23 @@ TerraformによりStep1と同等の構成をコードで再現（Infrastructure 
 - GUIとコード両方のスキルを証明する内容に構成
 
 📄 詳細は [`step2_terraform_build/README.md`](./step2_terraform_build/README.md) に記載
+
+---
+
+### 4-3. Step 3：サーバレス構成（Lambda / API Gateway）
+
+Terraformを用いて、**API GatewayとLambdaによる完全サーバレス構成**を構築。  
+フロントに公開APIを配置し、その背後でLambdaが実行される形を再現しました。
+
+- Lambda関数をTerraformで定義・デプロイ
+- API GatewayのHTTPルートと統合設定（Proxy統合）
+- `terraform apply` により即時URL発行
+- ブラウザアクセスで `Hello from Lambda!` を確認
+- GUI上でもLambda / API Gatewayの存在を確認
+- CloudWatch LogsにLambda実行ログが記録されていることも確認済み
+
+📄 詳細・コード・構成図・実行結果は  
+[`step3_serverless_build/README.md`](./step3_serverless_build/README.md) に記載しています。
 
 ---
 
