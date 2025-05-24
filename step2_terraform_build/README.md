@@ -73,9 +73,11 @@ Terraformにより、以下の5つのリソースが正常に構築されまし�
 
 ```bash
 Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
-VPC（main-vpc）
-Public Subnet（public-subnet）
-Internet Gateway（main-igw）
-Route Table（public-route-table）
-Route Table Association（public-subnet との紐付け）
+```
+
+- VPC（main-vpc）
+- Public Subnet（public-subnet）
+- Internet Gateway（main-igw）
+- Route Table（public-route-table）
+- Route Table Association（public-subnet との紐付け）
 
