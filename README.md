@@ -15,7 +15,7 @@ GUIでの手動構築から始まり、TerraformによるIaC、Serverless構成�
 | STEP | 内容 | 完了状況 |
 |------|------|----------|
 | STEP 1 | GUI構築（VPC, EC2, S3など） | ✅ 完了 |
-| STEP 2 | TerraformによるIaC構成 | ⏳ 準備中 |
+| STEP 2 | TerraformによるIaC構成 | ✅ 完了 |
 | STEP 3 | サーバレス構成（Lambda等） | ⏳ 準備中 |
 | STEP 4 | CI/CD＆監視設計 | ⏳ 準備中 |
 | STEP 5 | Notion/PDFによる資料整備 | ⏳ 準備中 |
@@ -36,6 +36,25 @@ AWSマネジメントコンソールを用いて、以下のGUI構成を設計�
 
 📄 詳細・構成図は [`step1_gui_build/README.md`](./step1_gui_build/README.md) に記載しています。
 
-## その他
-- 各ステップごとにコードと構成図を格納予定です
-- 最終的にNotion/PDFにて構成意図・設計思想をまとめ、採用資料として活用します
+---
+
+### 4-2. Step 2：Terraform構成（VPC / Subnet / Route Table）
+
+TerraformによりStep1と同等の構成をコードで再現（Infrastructure as Code）しました。
+
+- 再現性の高いVPC基盤構成（Public Subnet＋IGW＋Route Table）
+- AWS CLI + VSCode + GitHub連携による実行証明
+- GUIとコード両方のスキルを証明する内容に構成
+
+📄 詳細は [`step2_terraform_build/README.md`](./step2_terraform_build/README.md) に記載
+
+---
+
+## 5. その他
+
+- 各ステップごとにコードと構成図を整理
+- 最終的にNotion/PDFにて「構成意図 × 設計思想 × 再現性」を採用向けに提出予定
+
+---
+
+> 本ポートフォリオは、「作れる力 × 再現できる力 × 説明できる力」の三位一体を証明するものです。
