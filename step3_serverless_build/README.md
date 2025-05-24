@@ -48,9 +48,11 @@ def lambda_handler(event, context):
 ## 5. デプロイ実行ログ - Terraform Apply
 
 以下は `terraform apply` 実行結果の一部です。  
-作成されたリソースとAPIエンドポイントが確認できます。
+Terraformによって5つのリソースが作成され、APIエンドポイントも出力されました。
 
-📸 `terraform_apply_step3_gateway_result.png`
+📸 Terraform Applyの実行画面（クリックで拡大表示）：
+
+![terraform_apply_step3_gateway_result](./terraform_apply_step3_gateway_result.png)
 
 ```bash
 Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
