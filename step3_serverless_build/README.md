@@ -116,9 +116,9 @@ step3_serverless_build/
 
 | 項目 | 達成状況 |
 |------|----------|
-| TerraformでLambda構築 | ✅ |
-| API Gatewayとの統合（Proxy設定） | ✅ |
-| エンドポイントアクセスでLambda実行確認 | ✅ |
-| CloudWatchログ記録 | ✅ |
-| GUIでもリソース確認 | ✅ |
-| READMEによる可視化・証明 | ✅ |
+| TerraformでLambda構築 | 〇 |
+| API Gatewayとの統合（Proxy設定） | 〇 |
+| エンドポイントアクセスでLambda実行確認 | 〇 |
+| CloudWatchログ記録 | 〇 |
+| GUIでもリソース確認 | 〇 |
+| READMEによる可視化・証明 | 〇 |
