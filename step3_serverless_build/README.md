@@ -76,3 +76,20 @@ api_endpoint = "https://lmtiz2053l.execute-api.ap-northeast-1.amazonaws.com/dev/
 
 ---
 
+## 7. GUI確認（AWSマネジメントコンソール）
+
+Terraformによって構築されたリソースが、AWSマネジメントコンソール上でも正しく確認できました。
+
+📸 Lambda関数のGUI画面（クリックで拡大表示）：
+
+![lambda_gui_step3](./lambda_gui_step3.png)
+
+- 関数名：`step3_hello_lambda`
+- リージョン：`ap-northeast-1`（東京）
+- 関数ARN：`arn:aws:lambda:ap-northeast-1:************:function:step3_hello_lambda`（一部伏字）
+- GUI上でもTerraformでの定義通りに反映されていることを確認済みです
+
+> 🔐 アカウントID部分は伏字処理しています（セキュリティ対策のため）
+
+---
+
