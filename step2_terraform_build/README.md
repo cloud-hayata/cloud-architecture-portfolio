@@ -61,6 +61,7 @@ terraform init         # 初期化
 terraform plan         # 差分の確認
 terraform apply        # 実行
 terraform destroy      # 構成の削除
+```
 
 ---
 
