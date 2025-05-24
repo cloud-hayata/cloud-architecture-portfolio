@@ -3,7 +3,7 @@
 ## 1. 概要
 
 本ステップでは、Step1でGUIにより構築したAWSインフラ構成を、  
-**Terraform**を用いてコードで再現（Infrastructure as Code）**します。
+**Terraformを用いてコードで再現（Infrastructure as Code）**します。
 
 再現性のある構成・変更の容易さ・構成の明確化により、  
 「手で作れる」だけではなく「設計通りに再構築できる」エンジニアであることを証明します。
@@ -27,7 +27,6 @@ step2_terraform_build/
 ├── outputs.tf # 出力値の定義
 ├── terraform.tfvars # 実際の変数値
 ├── provider.tf # AWSプロバイダ設定
-
 
 ---
 
