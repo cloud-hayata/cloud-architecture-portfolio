@@ -27,7 +27,9 @@ step2_terraform_build/
 ├── outputs.tf # 出力値の定義
 ├── terraform.tfvars # 実際の変数値
 ├── provider.tf # AWSプロバイダ設定
-
+Edit me to generate
+  a
+    nice
 ---
 
 ## 4. Terraformで構築するAWSリソース
