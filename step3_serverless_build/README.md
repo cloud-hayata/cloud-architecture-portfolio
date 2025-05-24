@@ -42,3 +42,20 @@ def lambda_handler(event, context):
         "body": "Hello from Lambda!"
     }
 ```
+
+---
+
+## 5. デプロイ実行ログ - Terraform Apply
+
+以下は `terraform apply` 実行結果の一部です。  
+作成されたリソースとAPIエンドポイントが確認できます。
+
+📸 `terraform_apply_step3_gateway_result.png`
+
+```bash
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+api_endpoint = "https://lmtiz2053l.execute-api.ap-northeast-1.amazonaws.com/dev/hello"
+```
