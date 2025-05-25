@@ -134,7 +134,15 @@ resource "aws_ecs_task_definition" "app" {
           hostPort      = 80,
           protocol      = "tcp"
         }
-      ]
+      ],
+            logConfiguration = {
+        logDriver = "awslogs",
+        options = {
+          awslogs-group         = "/ecs/step6-flask-log-group",
+          awslogs-region        = "ap-northeast-1",
+          awslogs-stream-prefix = "ecs"
+        }
+      }
     }
   ])
 }
@@ -210,4 +218,28 @@ resource "aws_ecs_service" "app" {
   tags = {
     Name = "step6-fargate-service"
   }
+}
+
+resource "aws_cloudwatch_log_group" "ecs_flask_logs" {
+  name              = "/ecs/step6-flask-log-group"
+  retention_in_days = 7
+}
+
+resource "aws_cloudwatch_metric_alarm" "high_cpu_alarm" {
+  alarm_name          = "high-cpu-usage-alarm"
+  comparison_operator = "GreaterThanThreshold"
+  evaluation_periods  = 2
+  metric_name         = "CPUUtilization"
+  namespace           = "AWS/ECS"
+  period              = 60
+  statistic           = "Average"
+  threshold           = 80
+
+  dimensions = {
+    ClusterName = aws_ecs_cluster.main.name
+    ServiceName = aws_ecs_service.app.name
+  }
+
+  alarm_description = "CPU usage is above 80% for 2 minutes"
+  treat_missing_data = "missing"
 }
