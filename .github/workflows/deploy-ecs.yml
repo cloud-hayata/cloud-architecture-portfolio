@@ -38,3 +38,4 @@ jobs:
             --cluster step6-ecs-cluster \
             --service step6-fargate-service \
             --force-new-deployment
+            
