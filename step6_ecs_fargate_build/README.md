@@ -113,18 +113,18 @@
 
 ```plaintext
 cloud-architecture-portfolio/
-└── step6_ecs_fargate_build/
-├── docker/
-│ ├── app.py
-│ ├── Dockerfile
-│ └── requirements.txt
-├── terraform/
-│ └── main.tf
 ├── .github/
-│ └── workflows/
-│ └── deploy-ecs.yml
-├── images/
-└── README.md
+│   └── workflows/
+│       └── deploy-ecs.yml               # GitHub Actionsによる自動デプロイ
+├── step6_ecs_fargate_build/
+│   ├── docker/
+│   │   ├── app.py                       # Flaskアプリ本体
+│   │   ├── Dockerfile                   # Docker構成
+│   │   └── requirements.txt             # 依存ライブラリ定義
+│   ├── terraform/
+│   │   └── main.tf                      # VPC〜ECS構成を定義したTerraformコード
+│   ├── images/
+│   └── README.md                        # 本構成の解説ドキュメント
 ```
 
 ---
