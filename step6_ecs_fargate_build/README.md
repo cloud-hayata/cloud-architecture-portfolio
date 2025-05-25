@@ -110,6 +110,7 @@
 
 ## 5. ディレクトリ構成（概要）
 
+```plaintext
 cloud-architecture-portfolio/
 └── step6_ecs_fargate_build/
 ├── docker/
@@ -122,16 +123,8 @@ cloud-architecture-portfolio/
 │ └── workflows/
 │ └── deploy-ecs.yml
 ├── images/
-│ ├── step6_docker_build.png
-│ ├── step6_docker_run.png
-│ ├── step6_browser_access.png
-│ ├── step6_ecr_push.png
-│ ├── step6_ecs_vpc_sg.png
-│ ├── step6_ecs_cluster.png
-│ ├── step6_ecs_task_running.png
-│ ├── step6_alb_access.png
-│ └── step6_final_result.png
 └── README.md
+```
 
 ---
 
