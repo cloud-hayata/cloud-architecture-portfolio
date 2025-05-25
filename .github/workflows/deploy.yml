@@ -31,3 +31,4 @@ jobs:
           aws lambda update-function-code \
             --function-name step3_hello_lambda \
             --zip-file fileb://function.zip
+          echo "Lambda deployment completed!"
