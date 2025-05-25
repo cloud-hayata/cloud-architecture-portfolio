@@ -4,7 +4,7 @@
 
 ## 1. Notion構成意図ページ（公開用）
 
-👉 [構成意図ドキュメント（Notion）はこちら]([https://www.notion.so/xxxxx](https://absorbing-sumac-5fc.notion.site/AWS-Step1-4-Hayata-Cloud-Portfolio-1fe12fb2366080e193d3cc8a14f3c072?pvs=143))
+👉 [構成意図ドキュメント（Notion）はこちら](https://absorbing-sumac-5fc.notion.site/AWS-Step1-4-Hayata-Cloud-Portfolio-1fe12fb2366080e193d3cc8a14f3c072?pvs=143)
 
 ## 2. PDF版（添付用）
 
