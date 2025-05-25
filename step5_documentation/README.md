@@ -10,7 +10,7 @@
 
 ポートフォリオ添付資料としてPDFでもダウンロードできます。
 
-📄 [portfolio_design.pdf](./portfolio_design.pdf)
+📄 [portfolio_design.pdf](./portfolio_design_step1_to_4.pdf)
 
 ## 3. 内容一覧
 
