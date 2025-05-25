@@ -19,7 +19,7 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 
 ## 2. アーキテクチャ概要図
 
-![step6_final_result](step6_final_result.png)
+～～ここに構成図～～
 
 ---
 
