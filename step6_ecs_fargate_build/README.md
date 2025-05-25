@@ -84,8 +84,6 @@
 - `deploy-ecs.yml` により、自動ビルド＆デプロイを実現
 - Push → Build → ECR Push → ECS Serviceを更新
 
-📘 GitHub Actionsのログ画面は任意で追加
-
 ---
 
 ### 3-6. CloudWatchによる監視
@@ -95,8 +93,6 @@
 - CloudWatch Alarm:
   - `high-cpu-usage-alarm`（CPU使用率が80%を超えると通知）
 
-📘 CloudWatch画面のスクショは任意
-
 ---
 
 ## 4. デプロイ確認
@@ -104,7 +100,7 @@
 - ALB経由でアプリにアクセスし、 `Hello from Flask inside Docker!` を確認済
 
 📸 スクリーンショット:
-- ![最終確認](images/step6_browser_access.png)
+  ![ALBアクセス](images/step6_final_result.png)
 
 ---
 
