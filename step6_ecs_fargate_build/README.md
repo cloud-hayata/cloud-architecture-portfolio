@@ -1,11 +1,11 @@
-# 🚀 Step6: FlaskアプリをECS/Fargateに本番デプロイ＋CI/CD＋監視構築
+# Step6: FlaskアプリをECS/Fargateに本番デプロイ＋CI/CD＋監視構築
 
 このプロジェクトは、AWS上で **FlaskアプリケーションをDockerでコンテナ化**し、  
 **ECS / Fargate に本番環境レベルでデプロイ → GitHub ActionsでCI/CD → CloudWatchで監視**までを一貫して構築するポートフォリオです。
 
 ---
 
-## ✅ 1. 使用技術スタック
+## 1. 使用技術スタック
 
 | カテゴリ       | 使用サービス / ツール                     |
 |--------------|------------------------------------------|
@@ -17,13 +17,13 @@
 
 ---
 
-## 🗺️ 2. アーキテクチャ概要図
+## 2. アーキテクチャ概要図
 
 ![構成図](images/step6_final_result.png)
 
 ---
 
-## 🛠️ 3. 構築ステップと成果物
+## 3. 構築ステップと成果物
 
 ### 3-1. FlaskアプリのDocker化
 
@@ -33,8 +33,10 @@
 📸 スクリーンショット:
 - Dockerイメージをビルドしたログ  
   ![docker build](images/step6_docker_build.png)
+  
 - ビルドしたコンテナを8080番ポートで起動  
   ![docker run](images/step6_docker_run.png)
+  
 - ブラウザで `localhost:8080` にアクセスしてアプリを表示  
   ![ブラウザ表示確認](images/step6_browser_access.png)
 
@@ -57,8 +59,10 @@
 📸 スクリーンショット:
 - VPCとSGをTerraformで構築  
   ![VPC + SG](images/step6_ecs_vpc_sg.png)
+  
 - ECSクラスター作成完了  
   ![ECS Cluster](images/step6_ecs_cluster.png)
+  
 - Fargateタスクが実行中  
   ![Task Running](images/step6_ecs_task_running.png)
 
@@ -95,7 +99,7 @@
 
 ---
 
-## ✅ 4. デプロイ確認
+## 4. デプロイ確認
 
 - ALB経由でアプリにアクセスし、 `Hello from Flask inside Docker!` を確認済
 
@@ -104,7 +108,7 @@
 
 ---
 
-## 📁 5. ディレクトリ構成（概要）
+## 5. ディレクトリ構成（概要）
 
 cloud-architecture-portfolio/
 └── step6_ecs_fargate_build/
@@ -129,13 +133,9 @@ cloud-architecture-portfolio/
 │ └── step6_final_result.png
 └── README.md
 
-yaml
-コピーする
-編集する
-
 ---
 
-## 🔧 6. 今後の改善ポイント
+## 6. 今後の改善ポイント
 
 - ALBのHTTPS対応（ACM + Route53）
 - ECS Auto Scaling導入
@@ -145,7 +145,7 @@ yaml
 
 ---
 
-## 👑 7. Author
+## 7. Author
 
 この構成は、AWSクラウドエンジニア転職を目指す個人のポートフォリオとして構築されました。  
 設計レビュー・改善提案など大歓迎です！
