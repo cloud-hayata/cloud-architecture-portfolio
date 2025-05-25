@@ -19,7 +19,7 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 
 ## 2. アーキテクチャ概要図
 
-![step6_final_result](./step6_ecs_fargate_build/step6_final_result.png)
+![step6_final_result](step6_final_result.png)
 
 ---
 
@@ -31,9 +31,9 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 - コンテナ起動とブラウザ表示確認
 
 📸 スクリーンショット:
-- ![docker build](./step6_ecs_fargate_build/step6_docker_build.png)
-- ![docker run](./step6_ecs_fargate_build/step6_docker_run.png)
-- ![ブラウザ表示確認](./step6_ecs_fargate_build/step6_browser_access.png)
+- ![docker build](step6_docker_build.png)
+- ![docker run](step6_docker_run.png)
+- ![ブラウザ表示確認](step6_browser_access.png)
 
 ---
 
@@ -43,7 +43,7 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 - DockerイメージをECRにPush
 
 📸 スクリーンショット:
-- ![ECR Push](./step6_ecs_fargate_build/step6_ecr_push.png)
+- ![ECR Push](step6_ecr_push.png)
 
 ---
 
@@ -52,9 +52,9 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 - VPC, Subnet, SG, ECS Cluster, Service, Task定義などをTerraformで構築
 
 📸 スクリーンショット:
-- ![VPC + SG](./step6_ecs_fargate_build/step6_ecs_vpc_sg.png)
-- ![ECS Cluster](./step6_ecs_fargate_build/step6_ecs_cluster.png)
-- ![Task Running](./step6_ecs_fargate_build/step6_ecs_task_running.png)
+- ![VPC + SG](step6_ecs_vpc_sg.png)
+- ![ECS Cluster](step6_ecs_cluster.png)
+- ![Task Running](step6_ecs_task_running.png)
 
 ---
 
@@ -64,7 +64,7 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 - ドメインにアクセスしてアプリの動作確認
 
 📸 スクリーンショット:
-- ![ALBアクセス](./step6_ecs_fargate_build/step6_alb_access.png)
+- ![ALBアクセス](step6_alb_access.png)
 
 ---
 
@@ -93,9 +93,9 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 - ALBアクセス後、ブラウザ上に `Hello from Flask inside Docker!` を確認済
 
 📸 スクリーンショット:
-- ![最終確認](./step6_ecs_fargate_build/step6_browser_access.png)
+- ![最終確認](step6_browser_access.png)
 
 ---
 
-## ✅ 補足ディレクトリ構成
+## 5. 補足ディレクトリ構成
 
