@@ -104,7 +104,6 @@
 - ALB経由でアプリにアクセスし、 `Hello from Flask inside Docker!` を確認済
 
 📸 スクリーンショット:
-- ALBのDNS名にブラウザからアクセスし、Flaskアプリが表示された画面  
   ![ALBアクセス確認](images/step6_final_result.png)
 
 ---
