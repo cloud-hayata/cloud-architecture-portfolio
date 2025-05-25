@@ -1,4 +1,4 @@
-name: Deploy to ECS
+name: Deploy Lambda
 
 on:
   push:
@@ -13,11 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Log in to Amazon ECR
-        uses: aws-actions/amazon-ecr-login@v1
-        with:
-          region: ap-northeast-1
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -25,18 +20,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1
 
-      - name: Build, tag, and push Docker image
-        env:
-          ECR_REGISTRY: 825765404297.dkr.ecr.ap-northeast-1.amazonaws.com
-          ECR_REPOSITORY: flask-docker-app
-          IMAGE_TAG: latest
+      - name: Zip Lambda function
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          cd step4_ci_cd_build/lambda_function
+          zip -r function.zip .
+          mv function.zip ../../function.zip
 
-      - name: Deploy to ECS
+      - name: Deploy to AWS Lambda
         run: |
-          aws ecs update-service \
-            --cluster step6-ecs-cluster \
-            --service step6-fargate-service \
-            --force-new-deployment
+          aws lambda update-function-code \
+            --function-name step3_hello_lambda \
+            --zip-file fileb://function.zip
+          echo "Lambda deployment completed!"
