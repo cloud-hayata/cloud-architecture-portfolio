@@ -104,7 +104,7 @@
 - ALB経由でアプリにアクセスし、 `Hello from Flask inside Docker!` を確認済
 
 📸 スクリーンショット:
-  ![ALBアクセス](images/step6_final_result.png)
+![ALBアクセス](images/step6_final_result.png)
 
 ---
 
