@@ -48,7 +48,7 @@
 - DockerイメージをECRにPush
 
 📸 スクリーンショット:
-- ![ECR Push](images/step6_ecr_push.png)
+![ECR Push](images/step6_ecr_push.png)
 
 ---
 
