@@ -70,12 +70,16 @@
 
 ### 3-4. ALB構成とアクセス確認
 
-- ALB → Target Group → ECS Serviceにルーティング
-- ドメインにアクセスしてアプリの動作確認
+- TerraformでALB（Application Load Balancer）とTarget Groupを構築し、ECS Serviceと接続
+- ALBのDNS名にアクセスし、ECS上のFlaskアプリがブラウザで動作していることを確認
 
 📸 スクリーンショット:
-- ALB公開URLにアクセスしてアプリが表示された画面  
-  ![ALBアクセス](images/step6_final_result.png)
+
+- TerraformでALBを構築し、完了したログ（PowerShell出力）  
+  ![ALB構築ログ](images/step6_alb_access.png)
+
+- ALBのDNS名にブラウザからアクセスし、Flaskアプリが表示された画面  
+  ![ALBアクセス確認](images/step6_final_result.png)
 
 ---
 
