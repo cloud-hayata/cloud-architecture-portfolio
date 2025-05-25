@@ -31,9 +31,9 @@ FlaskアプリをDockerでコンテナ化し、Amazon ECS / Fargate上で稼働�
 - コンテナ起動とブラウザ表示確認
 
 📸 スクリーンショット:
-- ![docker build](step6_docker_build.png)
-- ![docker run](step6_docker_run.png)
-- ![ブラウザ表示確認](step6_browser_access.png)
+![docker build](step6_docker_build.png)
+![docker run](step6_docker_run.png)
+![ブラウザ表示確認](step6_browser_access.png)
 
 ---
 
