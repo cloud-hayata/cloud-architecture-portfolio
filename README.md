@@ -27,7 +27,7 @@ GUIでの手動構築から始まり、TerraformによるIaC、サーバレス�
 | STEP 2 | TerraformによるIaC構成              | ✅ 完了 |
 | STEP 3 | サーバレス構成（Lambda等）           | ✅ 完了 |
 | STEP 4 | CI/CD＆監視設計                     | ✅ 完了 |
-| STEP 5 | Notion/PDFによる資料整備             | ⏳ 準備中 |
+| STEP 5 | Notion/PDFによる資料整備             | ✅ 完了 |
 | STEP 6 | ECS/コンテナ構成                     | ⏳ 準備中 |
 | STEP 7 | 企業別カスタム構成                   | ⏳ 準備中 |
 | STEP 8 | 実案件再現                           | ⏳ 準備中 |
@@ -89,14 +89,27 @@ GitHub Push → Lambda自動更新 → 実行ログ → メトリクス → エ�
 - アーキテクチャ構成図をdraw.ioで可視化
 
 📄 実装内容とスクリーンショットは  
-[`step4_ci_cd_build/README.md`](./step4_ci_cd_build/README.md) に記載
+[`step4_ci_cd_build/README.md`](./step4_ci_cd_build/README.md)
+
+---
+
+### 4-5. Step 5：構成意図のドキュメント化（Notion / PDF）
+
+構成意図・技術選定理由・設計思想・応用力などをNotionとPDFで文章化。
+
+- 採用担当者にも伝わる「なぜその構成にしたか？」を明示
+- 他の構成との比較・応用可能性まで記述
+- PDF化して提出用資料としても活用可能
+
+📄 構成意図ドキュメントはこちら  
+[`step5_documentation/README.md`](./step5_documentation/README.md)
 
 ---
 
 ## 5. その他
 
 - 各ステップごとにコードと構成図を整理
-- 最終的にNotion/PDFにて「構成意図 × 設計思想 × 再現性」を採用向けに提出予定
+- 最終的にNotion/PDFにて「構成意図 × 設計思想 × 再現性」を採用向けに提出済み
 
 ---
 
