@@ -116,7 +116,7 @@ FlaskアプリをDockerでコンテナ化し、ECRにPush → ECS (Fargate) で�
 - ALB → Target Group → ECS ServiceへのルーティングをTerraformで構築
 - GitHub ActionsのPushトリガーで自動ビルド・デプロイ（deploy-ecs.yml）
 - CloudWatch Logsへアプリログを出力、80%以上のCPU使用率でアラーム設定
-- draw.ioにてアーキテクチャ構成図を作成（後日反映）
+- draw.ioにてアーキテクチャ構成図を作成
 
 📄 詳細・構成図・ログなどは  
 [`step6_ecs_fargate_build/README.md`](./step6_ecs_fargate_build/README.md)
