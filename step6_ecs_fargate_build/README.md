@@ -19,7 +19,18 @@
 
 ## 2. アーキテクチャ概要図
 
-～～　ここに構成図　～～
+GitHub Actions による CI/CD パイプラインから  
+ECS / Fargate、ALB経由のアクセス、CloudWatch監視までを網羅した構成図です。
+
+図内に含まれる構成要素：
+- GitHub Actions による Docker Build & ECS 更新
+- ECR リポジトリとイメージ管理
+- ECS Cluster / Task / Container の実行環境
+- ALB → Target Group → ECS へのルーティング
+- CloudWatch Logs & CPU Alarm による監視
+
+📸 構成図:
+![アーキテクチャ図](images/step6_architecture.png)
 
 ---
 
