@@ -28,7 +28,7 @@ GUIでの手動構築から始まり、TerraformによるIaC、サーバレス�
 | STEP 3 | サーバレス構成（Lambda等）           | ✅ 完了 |
 | STEP 4 | CI/CD＆監視設計                     | ✅ 完了 |
 | STEP 5 | Notion/PDFによる資料整備             | ✅ 完了 |
-| STEP 6 | ECS/コンテナ構成                     | ⏳ 準備中 |
+| STEP 6 | ECS/コンテナ構成                     | ✅ 完了 |
 | STEP 7 | 企業別カスタム構成                   | ⏳ 準備中 |
 | STEP 8 | 実案件再現                           | ⏳ 準備中 |
 
@@ -103,6 +103,23 @@ GitHub Push → Lambda自動更新 → 実行ログ → メトリクス → エ�
 
 📄 構成意図ドキュメントはこちら  
 [`step5_documentation/README.md`](./step5_documentation/README.md)
+
+---
+
+### 4-6. Step 6：ECS / Fargate + CI/CD + CloudWatch
+
+FlaskアプリをDockerでコンテナ化し、ECRにPush → ECS (Fargate) で本番デプロイ。  
+さらに、GitHub ActionsでCI/CDを構築し、CloudWatchでログ出力とCPU使用率の監視まで対応。
+
+- Flaskアプリ → Docker化
+- ECR → ECS（Fargate）にイメージを展開
+- ALB → Target Group → ECS ServiceへのルーティングをTerraformで構築
+- GitHub ActionsのPushトリガーで自動ビルド・デプロイ（deploy-ecs.yml）
+- CloudWatch Logsへアプリログを出力、80%以上のCPU使用率でアラーム設定
+- draw.ioにてアーキテクチャ構成図を作成（後日反映）
+
+📄 詳細・構成図・ログなどは  
+[`step6_ecs_fargate_build/README.md`](./step6_ecs_fargate_build/README.md)
 
 ---
 
